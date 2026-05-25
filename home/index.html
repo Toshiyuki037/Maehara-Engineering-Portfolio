@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--
+    Name: Max Maehara
+    Date Completed: May 25, 2026
+    Summary: Portfolio homepage for Engineering Portfolio of research and projects
+  -->
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Max Maehara | Electrical & Computer Engineering</title>
+
+  <meta
+    name="description"
+    content="Max Maehara — Electrical & Computer Engineering student focused on embedded systems, signal processing, hardware-aware machine learning, and research-driven engineering."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css"
+  />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png" />
+
+</head>
+
+<body>
+
+  <div data-scroll-container>
+
+    <nav class="navbar">
+
+      <div class="logo">
+        MAX MAEHARA
+      </div>
+
+      <div class="nav-links">
+
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+
+        <a class="icon-link" href="https://github.com/Toshiyuki037" target="_blank" rel="noopener noreferrer">
+          <img src="assets/github.png" alt="GitHub" />
+        </a>
+
+        <a class="icon-link" href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank" rel="noopener noreferrer">
+          <img src="assets/scholar.png" alt="Google Scholar" />
+        </a>
+
+        <a class="icon-link" href="https://linkedin.com/in/max-maehara" target="_blank" rel="noopener noreferrer">
+          <img src="assets/linkedin.png" alt="LinkedIn" />
+        </a>
+
+      </div>
+
+    </nav>
+
+    <header class="hero">
+
+      <video autoplay muted loop playsinline class="hero-video">
+        <source src="assets/portfolio_vid.mp4" type="video/mp4">
+      </video>
+
+      <div class="hero-overlay"></div>
+
+      <div
+        class="hero-content"
+        data-scroll
+        data-scroll-speed="2"
+      >
+
+        <h1>
+          Max Maehara
+        </h1>
+
+        <h2>
+          Electrical & Computer Engineering
+        </h2>
+
+        <p class="hero-quote">
+          "Create the world you want to live in" - Me
+        </p>
+
+      </div>
+
+    </header>
+
+    <section id="about" class="about-section">
+
+      <div class="about-grid">
+
+        <div class="about-left">
+
+          <p class="section-mini">
+            ABOUT
+          </p>
+
+          <h2>
+            Building the future one system at a time
+          </h2>
+
+          <p class="interests-text">
+            Outside of engineering, I shoot sports photography for Orange Media Network, capturing moments that connect me to my community. 
+            I also spend time surfing, spearfishing, and exploring the outdoors with my friends and family.
+          </p>
+
+          <p class="quote">
+            "I believe great engineering is measured not by what we can create, but by how what we create improves the world around us."
+          </p>
+
+        </div>
+
+        <div class="about-right">
+
+          <p>
+            I am a sophomore Electrical & Computer Engineering student in the Honors College at Oregon State University, from Oahu, Hawaii. 
+            My current work involves the application of embedded systems, signal processing, and hardware-aware machine learning.
+          </p>
+
+          <p>
+            I currently conduct research in Jason Clark’s and Matthew Johnston’s labs, exploring neural networks on FPGA-integrated hardware 
+            and modeling calibration drift in noninvasive blood pressure devices.
+          </p>
+
+          <p>
+            This portfolio documents the research, projects, and technical work shaping my growth as an engineer committed to building 
+            systems that leave a real-world impact.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="research">
+
+      <div class="section-heading">
+
+        <p class="section-mini">
+          RESEARCH
+        </p>
+
+        <h2>
+          RESEARCH DIRECTION
+        </h2>
+
+        <p class="section-subtitle">
+          Current and developing work in embedded intelligence, and drift modeling for biomedical systems.
+        </p>
+
+      </div>
+
+      <div class="research-grid">
+
+        <a class="card-link" href="https://www.notion.so/FPGA-NN-Research-3568546487d380c0b342da76aefd265e?source=copy_link" target="_blank" rel="noopener noreferrer">
+
+          <div class="research-card">
+
+            <img src="assets/sample.webp" alt="Embedded AI Systems research preview" />
+
+            <div class="research-overlay always-readable">
+
+              <p class="card-kicker">Embedded Systems · Machine Learning</p>
+
+              <h3>
+                FPGA Neural Network Integration
+              </h3>
+
+              <p>
+                Investigating FPGA-based neural network deployment with the goal of self evolving
+                hardware and an emphasis on efficient inference, hardware constraints, and model-to-circuit integration.
+              </p>
+
+              <p class="card-note">
+                Lab of Professor Jason Clark OSU
+              </p>
+
+            </div>
+
+          </div>
+
+        </a>
+
+        <a class="card-link" href="https://www.notion.so/Calibration-BP-Drift-Research-33e8546487d38017a2a1ff1a2f6e89c1?source=copy_link" target="_blank" rel="noopener noreferrer">
+
+          <div class="research-card">
+
+            <img src="assets/sample.webp" alt="Signal processing research preview" />
+
+            <div class="research-overlay always-readable">
+
+              <p class="card-kicker">Embedded Systems · Signal Processing</p>
+
+              <h3>
+                Blood Pressure Calibration Model
+              </h3>
+
+              <p>
+                Developing a calibration model for noninvasive continuous blood
+                pressure models through custom signal integrated circuits and signal
+                processing through MATLAB, developing a custom drift calibration model.
+              </p>
+
+              <p class="card-note">
+                Lab of Professor Matthew Johnston
+              </p>
+
+            </div>
+
+          </div>
+
+        </a>
+
+      </div>
+
+    </section>
+
+    <section id="projects">
+
+      <div class="section-heading">
+
+        <p class="section-mini">
+          PROJECTS
+        </p>
+
+        <h2>
+          ENGINEERING PROJECTS
+        </h2>
+
+        <p class="section-subtitle">
+          Selected technical work showing hardware, software, analysis,
+          implementation, and communication.
+        </p>
+
+      </div>
+
+      <div class="project-grid">
+
+        <a class="card-link" href="https://github.com/Toshiyuki037" target="_blank" rel="noopener noreferrer">
+
+          <div class="project-card">
+
+            <img src="assets/sample.webp" alt="Wrist Embedded Vision System" />
+
+            <div class="project-caption always-readable">
+
+              <p class="card-kicker">Embedded AI · Computer Vision</p>
+
+              <h3>
+                Wrist Embedded Vision System
+              </h3>
+
+              <p>
+                Developing a wearable embedded vision system that captures images, processes them with AI,
+                and sends contextual responses to smart glasses for real-time interaction.
+              </p>
+
+              <p class="card-note">
+                Add: hardware stack, model used, latency, communication method, prototype photos.
+              </p>
+
+            </div>
+
+          </div>
+
+        </a>
+
+        <a class="card-link" href="https://github.com/Toshiyuki037" target="_blank" rel="noopener noreferrer">
+
+          <div class="project-card">
+
+            <img src="assets/sample.webp" alt="CAD and Machined Jewelry Mold System" />
+
+            <div class="project-caption always-readable">
+
+              <p class="card-kicker">CAD · Machining · Product Design</p>
+
+              <h3>
+                Custom Jewelry Mold System
+              </h3>
+
+              <p>
+                Designed and machined custom mold components for jewelry production, combining CAD modeling,
+                fabrication constraints, and iterative testing for client-focused manufacturing.
+              </p>
+
+              <p class="card-note">
+                Add: CAD renders, machining process, material, tolerance goals, finished mold photos.
+              </p>
+
+            </div>
+
+          </div>
+
+        </a>
+
+        <a class="card-link" href="https://github.com/Toshiyuki037" target="_blank" rel="noopener noreferrer">
+
+          <div class="project-card">
+
+            <img src="assets/sample.webp" alt="Sports Photography Website" />
+
+            <div class="project-caption always-readable">
+
+              <p class="card-kicker">Web Development · Media Systems</p>
+
+              <h3>
+                Sports Photography Website
+              </h3>
+
+              <p>
+                Built a personal media website to organize and present sports photography work, emphasizing
+                visual storytelling, responsive design, and a clean user experience.
+              </p>
+
+              <p class="card-note">
+                Add: live link, tech stack, gallery structure, performance notes, selected images.
+              </p>
+
+            </div>
+
+          </div>
+
+        </a>
+
+      </div>
+
+    </section>
+
+    <section id="resume">
+
+      <div class="section-heading">
+
+        <p class="section-mini">
+          RESUME
+        </p>
+
+        <h2>
+          RESUME
+        </h2>
+
+      </div>
+
+      <div class="resume-container">
+
+        <div class="resume-card">
+
+          <h3>
+            Coursework
+          </h3>
+
+          <p>
+            Circuits, digital logic, embedded systems, computer architecture,
+            signals and systems, linear algebra, differential equations,
+            data structures, and engineering computation.
+          </p>
+
+        </div>
+
+        <div class="resume-card">
+
+          <h3>
+            Research Preparation
+          </h3>
+
+          <p>
+            Embedded AI, signal processing, hardware-aware machine learning,
+            experimental design, numerical computing, and technical documentation.
+          </p>
+
+        </div>
+
+        <div class="resume-card">
+
+          <h3>
+            Technical Skills
+          </h3>
+
+          <p>
+            Python, C/C++, VHDL Verilog, MATLAB, Linux, Git, PCB design,
+            FPGA development, microcontrollers, CAD, Machining, OpenCV, NumPy, and data analysis.
+          </p>
+
+        </div>
+
+        <div class="resume-card">
+
+          <h3>
+            Focus
+          </h3>
+
+          <p>
+            Seeking advanced ECE environments to leverage resources and opportunities in undergraduate
+            research, electrical & computer engineering, embedded intelligence, biomedical and aerospace applications.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="resume-button-container">
+
+        <a class="button" href="assets/engineering_resume.pdf" target="_blank" rel="noopener noreferrer">
+          Download Resume
+        </a>
+
+      </div>
+
+    </section>
+
+    <section id="contact">
+
+      <div class="section-heading">
+
+        <p class="section-mini">
+          CONTACT
+        </p>
+
+        <h2>
+          GET IN TOUCH
+        </h2>
+
+        <p class="section-subtitle">
+          For research, engineering opportunities, or academic collaboration.
+        </p>
+
+      </div>
+
+      <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          required
+        />
+
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          required
+        />
+
+        <textarea
+          name="message"
+          rows="6"
+          placeholder="Message"
+          required
+        ></textarea>
+
+        <button type="submit">
+          Submit
+        </button>
+
+      </form>
+
+    </section>
+
+    <footer class="footer">
+
+      <div class="footer-left">
+
+        <h3>
+          Max Maehara
+        </h3>
+
+        <p>
+          Electrical & Computer Engineering
+        </p>
+
+        <p>
+          Research · Projects · Engineering
+        </p>
+
+      </div>
+
+      <div class="footer-links">
+
+        <a href="mailto:maxmaehara037@gmail.com">
+          Email
+        </a>
+
+        <a href="https://github.com/Toshiyuki037" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+
+        <a href="https://linkedin.com/in/max-maehara" target="_blank" rel="noopener noreferrer">
+          LinkedIn
+        </a>
+
+        <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank" rel="noopener noreferrer">
+          Scholar
+        </a>
+
+      </div>
+
+    </footer>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
