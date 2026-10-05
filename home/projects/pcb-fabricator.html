@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Autonomous Desktop PCB Fabricator | Max Maehara</title>
+<meta name="description" content="Patent-pending autonomous desktop PCB fabrication and assembly system by Max Maehara.">
+<link rel="icon" type="image/png" href="../assets/favicon.png">
+<style>
+:root{
+  --bg:#ffffff;
+  --ink:#161616;
+  --muted:#6f6f73;
+  --line:#e5e5e7;
+  --soft:#f5f5f7;
+  --max:980px;
+  --article:700px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit}
+.sitebar{
+  width:min(1180px,calc(100% - 56px));
+  margin:0 auto;
+  min-height:68px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  border-bottom:1px solid var(--line);
+}
+.sitebar a{
+  text-decoration:none;
+  font-size:.76rem;
+  color:var(--muted);
+}
+.brand{
+  font-size:.74rem;
+  letter-spacing:.03em;
+  color:#222;
+}
+.article{
+  width:min(var(--article),calc(100% - 36px));
+  margin:0 auto;
+}
+.breadcrumb{
+  margin-top:44px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px;
+  font-size:.68rem;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+  color:var(--muted);
+}
+.breadcrumb a{text-decoration:none}
+.header{
+  text-align:center;
+  padding:26px 0 30px;
+}
+.header h1{
+  margin:0 auto;
+  max-width:760px;
+  font-size:clamp(2rem,4.4vw,3.5rem);
+  line-height:.98;
+  letter-spacing:-.055em;
+  font-weight:550;
+}
+.meta{
+  display:flex;
+  justify-content:center;
+  gap:12px 22px;
+  flex-wrap:wrap;
+  margin-top:18px;
+  font-size:.75rem;
+  color:var(--muted);
+}
+.hero-media{
+  width:min(440px,calc(100% - 36px));
+  margin:0 auto 28px;
+  border-radius:0;
+  overflow:hidden;
+  background:var(--soft);
+  border:1px solid var(--line);
+}
+.hero-media img{
+  display:block;
+  width:100%;
+  height:auto;
+}
+.intro{
+  width:min(var(--article),calc(100% - 36px));
+  margin:0 auto 44px;
+  color:#4b4b50;
+  font-size:.96rem;
+  line-height:1.65;
+}
+.intro em{
+  display:block;
+  margin-top:12px;
+  color:#333;
+}
+.story{
+  width:min(var(--article),calc(100% - 36px));
+  margin:0 auto;
+  padding-bottom:24px;
+}
+.story-section{
+  padding:28px 0 22px;
+}
+.story-section h2{
+  margin:0 0 16px;
+  font-size:clamp(1.45rem,3vw,2.15rem);
+  line-height:1.02;
+  letter-spacing:-.045em;
+  font-weight:550;
+}
+.story-section p{
+  margin:0 0 14px;
+  font-size:.96rem;
+  line-height:1.67;
+  color:#414146;
+}
+.story-section p:last-child{margin-bottom:0}
+.inline-media{
+  margin:24px 0 14px;
+  border-radius:0;
+  overflow:hidden;
+  border:1px solid var(--line);
+  background:var(--soft);
+}
+.inline-media img{display:block;width:100%;height:auto}
+.caption{
+  margin-top:8px;
+  font-size:.7rem;
+  line-height:1.45;
+  color:var(--muted);
+}
+.pill-row{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:8px;
+  margin-top:24px;
+}
+.pill{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:38px;
+  padding:0 15px;
+  border-radius:999px;
+  border:1px solid #202020;
+  background:#202020;
+  color:#fff;
+  text-decoration:none;
+  font-size:.74rem;
+}
+.pill.secondary{
+  background:#fff;
+  color:#202020;
+  border-color:#c9c9cd;
+}
+.next{
+  width:min(var(--article),calc(100% - 36px));
+  margin:12px auto 72px;
+  padding-top:24px;
+  border-top:1px solid var(--line);
+  display:flex;
+  justify-content:center;
+}
+.next a{
+  font-size:.75rem;
+  color:var(--muted);
+  text-decoration:none;
+}
+.footer{
+  width:min(1180px,calc(100% - 56px));
+  margin:0 auto 40px;
+  padding-top:22px;
+  border-top:1px solid var(--line);
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  color:var(--muted);
+  font-size:.7rem;
+}
+@media(max-width:700px){
+  .sitebar,.footer{width:calc(100% - 28px)}
+  .sitebar{min-height:60px}
+  .brand{display:none}
+  .breadcrumb{margin-top:30px}
+  .header{padding-top:20px}
+  .hero-media{width:calc(100% - 20px);border-radius:12px}
+  .footer{flex-direction:column}
+}
+</style>
+</head>
+<body>
+<header class="sitebar">
+  <a href="../index.html#projects">← Back to Projects</a>
+  <div class="brand">MAX MAEHARA · ELECTRICAL &amp; COMPUTER ENGINEERING</div>
+</header>
+
+<div class="article">
+  <div class="breadcrumb">
+    <a href="../index.html">Portfolio</a><span>/</span><a href="../index.html#projects">Projects</a><span>/</span><span>PCB Fabricator</span>
+  </div>
+  <section class="header">
+    <h1>Autonomous Desktop PCB Fabricator</h1>
+    <div class="meta">
+      <span>Patent Pending</span>
+      <span>Automation · Mechatronics</span>
+      <span>2026</span>
+    </div>
+  </section>
+</div>
+
+<div class="hero-media">
+  <img src="../assets/thumbnails/gantry.webp" alt="Autonomous Desktop PCB Fabricator gantry">
+</div>
+
+<div class="intro">
+  While building hardware projects, I kept running into the same cycle: fabricate a board, assemble it, discover a mistake, debug it, wait on another revision, and repeat.
+  <em>The idea itself was often not the slow part. Everything around the idea was.</em>
+</div>
+
+<main class="story">
+  <section class="story-section">
+    <h2>The Problem: Hardware iteration is still painfully fragmented.</h2>
+    <p>A single prototype can involve board fabrication, drilling, parts handling, paste, placement, inspection, reflow, debugging, and then another round of waiting when something changes.</p>
+    <p>I started this project because I wanted more of that cycle to happen close to the engineer instead of being broken across separate tools, vendors, and delays.</p>
+  </section>
+
+  <section class="story-section">
+    <h2>The Machine: Bring more of the prototype cycle onto one desktop.</h2>
+    <p>The system combines board handling, fabrication, drilling, via formation, deposition, component placement, inspection, and reflow into one compact machine.</p>
+    <p>The goal is not to recreate a factory in miniature. It is to automate enough repetitive work that revising hardware feels more like part of the design process and less like restarting a logistics chain.</p>
+  </section>
+
+  <section class="story-section">
+    <h2>The Goal: Spend more time testing ideas, less time fighting the workflow.</h2>
+    <p>I want engineers, labs, classrooms, and small teams to be able to move from an idea toward a working board with fewer handoffs. The more tedious parts of fabrication and assembly should increasingly be handled by the machine.</p>
+  </section>
+
+  <section class="story-section">
+    <h2>The Bigger Picture: A node in a decentralized manufacturing future.</h2>
+    <p>This project connects directly to my Distributed Manufacturing Control work. The control architecture focuses on how independent manufacturing capacity can be coordinated across a network. The PCB Fabricator focuses on the other side of that future: smaller, more autonomous production tools that can live directly where design work happens.</p>
+    <div class="pill-row">
+      <a class="pill" href="distributed-manufacturing.html">Manufacturing Control →</a>
+      <a class="pill secondary" href="https://app.notion.com/p/PCB-Printer-3db8546487d3804796d5c5300e68784b?source=copy_link" target="_blank" rel="noopener noreferrer">Project notes ↗</a>
+    </div>
+  </section>
+</main>
+
+<div class="next"><a href="../index.html">Home Page →</a></div>
+
+<footer class="footer">
+  <span>Max Maehara</span>
+  <span>Electrical &amp; Computer Engineering · Oregon State University</span>
+</footer>
+</body>
+</html>

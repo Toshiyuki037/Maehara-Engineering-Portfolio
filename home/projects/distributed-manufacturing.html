@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Distributed Manufacturing Control | Max Maehara</title>
+<meta name="description" content="Patent-pending distributed manufacturing control architecture by Max Maehara.">
+<link rel="icon" type="image/png" href="../assets/favicon.png">
+<style>
+:root{
+  --bg:#ffffff;
+  --ink:#161616;
+  --muted:#6f6f73;
+  --line:#e5e5e7;
+  --soft:#f5f5f7;
+  --max:980px;
+  --article:700px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit}
+.sitebar{
+  width:min(1180px,calc(100% - 56px));
+  margin:0 auto;
+  min-height:68px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  border-bottom:1px solid var(--line);
+}
+.sitebar a{
+  text-decoration:none;
+  font-size:.76rem;
+  color:var(--muted);
+}
+.brand{
+  font-size:.74rem;
+  letter-spacing:.03em;
+  color:#222;
+}
+.article{
+  width:min(var(--article),calc(100% - 36px));
+  margin:0 auto;
+}
+.breadcrumb{
+  margin-top:44px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px;
+  font-size:.68rem;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+  color:var(--muted);
+}
+.breadcrumb a{text-decoration:none}
+.header{
+  text-align:center;
+  padding:26px 0 30px;
+}
+.header h1{
+  margin:0 auto;
+  max-width:760px;
+  font-size:clamp(2rem,4.4vw,3.5rem);
+  line-height:.98;
+  letter-spacing:-.055em;
+  font-weight:550;
+}
+.meta{
+  display:flex;
+  justify-content:center;
+  gap:12px 22px;
+  flex-wrap:wrap;
+  margin-top:18px;
+  font-size:.75rem;
+  color:var(--muted);
+}
+.hero-media{
+  width:min(440px,calc(100% - 36px));
+  margin:0 auto 28px;
+  border-radius:0;
+  overflow:hidden;
+  background:var(--soft);
+  border:1px solid var(--line);
+}
+.hero-media img{
+  display:block;
+  width:100%;
+  height:auto;
+}
+.intro{
+  width:min(var(--article),calc(100% - 36px));
+  margin:0 auto 44px;
+  color:#4b4b50;
+  font-size:.96rem;
+  line-height:1.65;
+}
+.intro em{
+  display:block;
+  margin-top:12px;
+  color:#333;
+}
+.story{
+  width:min(var(--article),calc(100% - 36px));
+  margin:0 auto;
+  padding-bottom:24px;
+}
+.story-section{
+  padding:28px 0 22px;
+}
+.story-section h2{
+  margin:0 0 16px;
+  font-size:clamp(1.45rem,3vw,2.15rem);
+  line-height:1.02;
+  letter-spacing:-.045em;
+  font-weight:550;
+}
+.story-section p{
+  margin:0 0 14px;
+  font-size:.96rem;
+  line-height:1.67;
+  color:#414146;
+}
+.story-section p:last-child{margin-bottom:0}
+.inline-media{
+  margin:24px 0 14px;
+  border-radius:0;
+  overflow:hidden;
+  border:1px solid var(--line);
+  background:var(--soft);
+}
+.inline-media img{display:block;width:100%;height:auto}
+.caption{
+  margin-top:8px;
+  font-size:.7rem;
+  line-height:1.45;
+  color:var(--muted);
+}
+.pill-row{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:8px;
+  margin-top:24px;
+}
+.pill{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:38px;
+  padding:0 15px;
+  border-radius:999px;
+  border:1px solid #202020;
+  background:#202020;
+  color:#fff;
+  text-decoration:none;
+  font-size:.74rem;
+}
+.pill.secondary{
+  background:#fff;
+  color:#202020;
+  border-color:#c9c9cd;
+}
+.next{
+  width:min(var(--article),calc(100% - 36px));
+  margin:12px auto 72px;
+  padding-top:24px;
+  border-top:1px solid var(--line);
+  display:flex;
+  justify-content:center;
+}
+.next a{
+  font-size:.75rem;
+  color:var(--muted);
+  text-decoration:none;
+}
+.footer{
+  width:min(1180px,calc(100% - 56px));
+  margin:0 auto 40px;
+  padding-top:22px;
+  border-top:1px solid var(--line);
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  color:var(--muted);
+  font-size:.7rem;
+}
+@media(max-width:700px){
+  .sitebar,.footer{width:calc(100% - 28px)}
+  .sitebar{min-height:60px}
+  .brand{display:none}
+  .breadcrumb{margin-top:30px}
+  .header{padding-top:20px}
+  .hero-media{width:calc(100% - 20px);border-radius:12px}
+  .footer{flex-direction:column}
+}
+</style>
+</head>
+<body>
+<header class="sitebar">
+  <a href="../index.html#projects">← Back to Projects</a>
+  <div class="brand">MAX MAEHARA · ELECTRICAL &amp; COMPUTER ENGINEERING</div>
+</header>
+
+<div class="article">
+  <div class="breadcrumb">
+    <a href="../index.html">Portfolio</a><span>/</span><a href="../index.html#projects">Projects</a><span>/</span><span>Distributed Manufacturing</span>
+  </div>
+  <section class="header">
+    <h1>Distributed Manufacturing Control</h1>
+    <div class="meta">
+      <span>Patent Pending</span>
+      <span>Manufacturing Systems</span>
+      <span>2026</span>
+    </div>
+  </section>
+</div>
+
+<div class="hero-media">
+  <img src="../assets/thumbnails/patent.webp" alt="Distributed manufacturing control architecture">
+</div>
+
+<div class="intro">
+  Manufacturing capacity is often unevenly used: one shop is overloaded while another has compatible machines sitting idle. I started this project around the idea that those separate resources could be coordinated as one network instead of treated as isolated capacity.
+  <em>This is part of a broader belief I have about where manufacturing is headed: more decentralized, more connected, and closer to the people actually building products.</em>
+</div>
+
+<main class="story">
+  <section class="story-section">
+    <h2>The Problem: Capacity exists, but it is fragmented.</h2>
+    <p>Most manufacturing capacity is managed shop by shop. That works until demand spikes, machines fail, or a job requires more throughput than one provider can handle.</p>
+    <p>I wanted to explore what would happen if capacity could be discovered, reserved, and coordinated across independent manufacturers while each shop still remained its own business.</p>
+  </section>
+
+  <section class="story-section">
+    <h2>The Idea: Treat distributed capacity like infrastructure.</h2>
+    <p>The architecture separates four states—requested, allocated, produced, and conforming quantity—so the system does not assume that assigning work means the job is actually complete.</p>
+    <p>If output is deficient, the missing quantity can be restored and reallocated without restarting the entire order. That closed loop is the part I care about most: allocation, verification, and recovery all belong in the same system.</p>
+  </section>
+
+  <section class="story-section">
+    <h2>The Future: Manufacturing becomes more decentralized.</h2>
+    <p>I believe more production will eventually move across networks of shops, labs, and smaller automated systems rather than staying concentrated in a small number of centralized facilities.</p>
+    <p>The hard part is making that decentralized capacity dependable. This patent is meant to be one piece of that infrastructure: a coordination layer for capacity, reservations, verification, and failure recovery.</p>
+  </section>
+
+  <section class="story-section">
+    <h2>Why it connects directly to the PCB Fabricator.</h2>
+    <p>Thinking about decentralized manufacturing is also what pushed me toward the Autonomous Desktop PCB Fabricator. One project asks how distributed capacity should be coordinated across a network. The other asks what one smaller autonomous node in that network might look like.</p>
+    <div class="pill-row">
+      <a class="pill" href="pcb-fabricator.html">View PCB Fabricator →</a>
+    </div>
+  </section>
+</main>
+
+<div class="next"><a href="../index.html">Home Page →</a></div>
+
+<footer class="footer">
+  <span>Max Maehara</span>
+  <span>Electrical &amp; Computer Engineering · Oregon State University</span>
+</footer>
+</body>
+</html>
